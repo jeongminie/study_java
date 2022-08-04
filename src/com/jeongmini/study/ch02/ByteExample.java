@@ -1,10 +1,10 @@
-package test;
+package com.jeongmini.study.ch02;
 
-public class test {
+public class ByteExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("hello");
+
 	}
 
 }
