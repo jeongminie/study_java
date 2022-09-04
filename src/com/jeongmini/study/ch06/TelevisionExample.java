@@ -1,0 +1,13 @@
+package com.jeongmini.study.ch06;
+
+public class TelevisionExample {
+
+	public static void main(String[] args) {
+
+		System.out.println(Television.campany);
+		System.out.println(Television.model);
+		System.out.println(Television.info);
+
+	}
+
+}
