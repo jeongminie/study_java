@@ -20,11 +20,12 @@ public class Main {
 			h++;
 			m+=count;
 			if(m > 60) {
-				m/=60;
+				h++;
+				m%=60;
 			}
 			System.out.println(h + " " + m);
 		} else {
-			System.out.println(h + " " + (m-45));
+			System.out.println(h + " " + (m-count));
 		}
 	}
 }
