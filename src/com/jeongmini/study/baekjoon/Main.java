@@ -10,22 +10,22 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		int pay = Integer.parseInt(br.readLine());
+		int count = Integer.parseInt(br.readLine());
 		
-		int h = Integer.parseInt(st.nextToken());
-		int m = Integer.parseInt(st.nextToken());
-		int count = Integer.parseInt(st.nextToken());
+		StringBuilder sb = new StringBuilder();
 		
-		if(count > 60) {
-			h++;
-			m+=count;
-			if(m > 60) {
-				h++;
-				m%=60;
-			}
-			System.out.println(h + " " + m);
-		} else {
-			System.out.println(h + " " + (m-count));
+		int sum = 0;
+		
+		for(int i = 1; i <= count; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine()," ");
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			
+			sum += i;
 		}
+		
+		System.out.println(sum);
+		
 	}
 }
